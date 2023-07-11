@@ -1,4 +1,4 @@
-import streamlitreamlit as streamlit
+import streamlit as streamlit
 import pandas as pandas
 
 my_fruit_listreamlit = pandas.read_csv("https://uni-lab-files.s3.us-westreamlit-2.amazonaws.com/dabw/fruit_macros.txt")
