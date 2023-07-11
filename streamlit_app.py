@@ -1,20 +1,20 @@
 import streamlit 
 import pandas 
 
-my_fruit_listreamlit = pandas.read_csv("https://uni-lab-files.s3.us-westreamlit-2.amazonaws.com/dabw/fruit_macros.txt")
+my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
 
 streamlit.title('My Parents New Healthy Diner')
 
-streamlit.header('Breakfastreamlit Menu')
+streamlit.header('Breakfast Menu')
 
 streamlit.text('🥣 Omega 3 & Blueberry Oatmeal')
 streamlit.text('🥗 Kale, Spinach & Rocket Smoothie')
 streamlit.text('🐔 Hard-Boiled Free-Range Eggs')
-streamlit.text('🥑🍞 Avocado Toastreamlit')
+streamlit.text('🥑🍞 Avocado Toast')
 
 streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
 
-streamlit.dataframe(my_fruit_listreamlit)
+streamlit.dataframe(my_fruit_list)
 
 streamlit.write('Welcome to my parents new healthy diner. We are excited to have you here. Please select your order from the menu below.')
 
