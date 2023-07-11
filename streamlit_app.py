@@ -1,37 +1,37 @@
-import streamlit as st
-import pandas as pd
+import streamlitreamlit as streamlit
+import pandas as pandas
 
-my_fruit_list = pd.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
+my_fruit_listreamlit = pandas.read_csv("https://uni-lab-files.s3.us-westreamlit-2.amazonaws.com/dabw/fruit_macros.txt")
 
-st.title('My Parents New Healthy Diner')
+streamlit.title('My Parents New Healthy Diner')
 
-st.header('Breakfast Menu')
+streamlit.header('Breakfastreamlit Menu')
 
-st.text('🥣 Omega 3 & Blueberry Oatmeal')
-st.text('🥗 Kale, Spinach & Rocket Smoothie')
-st.text('🐔 Hard-Boiled Free-Range Eggs')
-st.text('🥑🍞 Avocado Toast')
+streamlit.text('🥣 Omega 3 & Blueberry Oatmeal')
+streamlit.text('🥗 Kale, Spinach & Rocket Smoothie')
+streamlit.text('🐔 Hard-Boiled Free-Range Eggs')
+streamlit.text('🥑🍞 Avocado Toastreamlit')
 
-st.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
+streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
 
-st.dataframe(my_fruit_list)
+streamlit.dataframe(my_fruit_listreamlit)
 
-st.write('Welcome to my parents new healthy diner. We are excited to have you here. Please select your order from the menu below.')
+streamlit.write('Welcome to my parents new healthy diner. We are excited to have you here. Please select your order from the menu below.')
 
 menu = ['Salad', 'Soup', 'Sandwich', 'Burger', 'Pizza']
-option = st.selectbox('Menu', menu)
+option = streamlit.selectbox('Menu', menu)
 
-st.write('You selected:', option)
+streamlit.write('You selected:', option)
 
 if option == 'Salad':
-    st.write('You selected the salad. This is a great choice. It is very healthy and low in calories.')
+    streamlit.write('You selected the salad. This is a great choice. It is very healthy and low in calories.')
 elif option == 'Soup':
-    st.write('You selected the soup. This is a great choice. It is very healthy and low in calories.')
+    streamlit.write('You selected the soup. This is a great choice. It is very healthy and low in calories.')
 elif option == 'Sandwich':
-    st.write('You selected the sandwich. This is a great choice. It is very healthy and low in calories.')
+    streamlit.write('You selected the sandwich. This is a great choice. It is very healthy and low in calories.')
 elif option == 'Burger':
-    st.write('You selected the burger. This is not a great choice. It is very unhealthy and high in calories.')
+    streamlit.write('You selected the burger. This is not a great choice. It is very unhealthy and high in calories.')
 elif option == 'Pizza':
-    st.write('You selected the pizza. This is not a great choice. It is very unhealthy and high in calories.')
+    streamlit.write('You selected the pizza. This is not a great choice. It is very unhealthy and high in calories.')
 
-st.write('Thank you for visiting our diner. We hope you enjoyed your meal. Please come again soon.')
+streamlit.write('Thank you for visiting our diner. We hope you enjoyed your meal. Please come again soon.')
